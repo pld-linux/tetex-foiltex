@@ -3,7 +3,7 @@ Summary:	Set of LaTeX macros for preparing slides
 Summary(pl):	Zbiór makr tekstowych do przygotowywania slajdów
 Name:		tetex-foiltex
 Version:	1
-Release:	3
+Release:	4
 License:	nocommercial	
 Group:		Applications/Publishing/TeX
 Group(de):	Applikationen/Publizieren/TeX
@@ -13,15 +13,14 @@ Source0:	ftp://ftp.dante.de/tex-archive/nonfree/macros/latex/contrib/supported/%
 %requires_eq	tetex-latex
 BuildRequires:	tetex-latex
 Prereq:		tetex
-Prereq:		%{_bindir}/mktexlsr
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 Set of LaTeX macros for preparing slides. Also very usefull in
 preparing presentation using pdflatex.
 
-%description -l	pl
-Zbiór makr LaTeXa do przygotowywania slajd. Równie¿ u¿yteczny w
+%description -l pl
+Zbiór makr LaTeXa do przygotowywania slajdów. Równie¿ u¿yteczny w
 przypadku przygotowywania prezentacji za pomoc± pdflatex.
 
 %prep
@@ -42,11 +41,8 @@ gzip -9nf readme.flt sampfoil.tex
 %clean
 rm -rf $RPM_BUILD_ROOT
 
-%post 
-%{_bindir}/mktexlsr
-
-%postun
-%{_bindir}/mktexlsr
+%post	-p %{_bindir}/mktexlsr
+%postun	-p %{_bindir}/mktexlsr
 
 %files 
 %defattr(644,root,root,755)
