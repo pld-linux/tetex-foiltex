@@ -2,14 +2,14 @@
 Summary:	Set of LaTeX macros for prepering slides.
 Version:	1
 Name:		tetex-foiltex
-Release:	1
+Release:	2
 Copyright:	nocommercial	
 Group:		Applications/Publishing/TeX
 Group(pl):	Aplikacje/Publikowanie/TeX
 URL:		ftp://ftp.dante.de/tex-archive/macros/latex/contrib/supported/%{_short_name}.tar.gz
 Source0:	%{_short_name}.tar.gz
-Requires:	tetex
-Requires:	tetex-latex
+%requires_eq	tetex
+%requires_eq	tetex-latex
 BuildRequires:	tetex-latex
 Prereq:		tetex
 Prereq:		/usr/bin/mktexlsr
