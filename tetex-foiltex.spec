@@ -1,13 +1,13 @@
 %define _short_name 	foiltex
 Summary:	Set of LaTeX macros for preparing slides
 Summary(pl):	Zbiór makr tekstowych do przygotowywania slajdów
-Name:		tetex-foiltex
+Name:		tetex-%{_short_name}
 Version:	1
-Release:	4
+Release:	5
 License:	non-commercial
 Group:		Applications/Publishing/TeX
-Source0:	ftp://ftp.dante.de/tex-archive/nonfree/macros/latex/contrib/supported/%{_short_name}.tar.gz
-# Source0-md5:	82b85d8439e6788fabe10fb59ff1c742
+Source0:	ftp://tug.ctan.org/tex-archive/nonfree/macros/latex/contrib//%{_short_name}.tar.gz
+# Source0-md5:	3d6c4425e941f09db4ea3987daa02e09
 %requires_eq	tetex
 %requires_eq	tetex-latex
 BuildRequires:	tetex-latex
