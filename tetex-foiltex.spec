@@ -1,5 +1,5 @@
 %define _short_name 	foiltex
-Summary:	Set of LaTeX macros for prepering slides.
+Summary:	Set of LaTeX macros for preparing slides.
 Version:	1
 Name:		tetex-foiltex
 Release:	2
@@ -17,8 +17,8 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 
 %description
-Set of LaTeX macros for prepering slides. Also very usefull in
-prepering presentation using pdflatex.
+Set of LaTeX macros for preparing slides. Also very usefull in
+preparing presentation using pdflatex.
 
 %prep
 %setup -q -n %{_short_name}
