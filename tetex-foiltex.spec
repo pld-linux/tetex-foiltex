@@ -1,15 +1,14 @@
 %define _short_name 	foiltex
 Summary:	Set of LaTeX macros for preparing slides
-Summary(pl):	Zbiór makr tekstowych do przygotowywania slajd
+Summary(pl):	Zbiór makr tekstowych do przygotowywania slajdów
 Name:		tetex-foiltex
 Version:	1
 Release:	3
-Copyright:	nocommercial	
+License:	nocommercial	
 Group:		Applications/Publishing/TeX
 Group(de):	Applikationen/Publizieren/TeX
 Group(pl):	Aplikacje/Publikowanie/TeX
-URL:		ftp://ftp.dante.de/tex-archive/macros/latex/contrib/supported/%{_short_name}.tar.gz
-Source0:	%{_short_name}.tar.gz
+Source0:	ftp://ftp.dante.de/tex-archive/nonfree/macros/latex/contrib/supported/%{_short_name}.tar.gz
 %requires_eq	tetex
 %requires_eq	tetex-latex
 BuildRequires:	tetex-latex
@@ -40,14 +39,14 @@ install {fltfonts.def,*.clo,*.sty,foiltex.log,foils.cls} \
 
 gzip -9nf readme.flt sampfoil.tex
 
+%clean
+rm -rf $RPM_BUILD_ROOT
+
 %post 
 %{_bindir}/mktexlsr
 
 %postun
 %{_bindir}/mktexlsr
-
-%clean
-rm -rf $RPM_BUILD_ROOT
 
 %files 
 %defattr(644,root,root,755)
