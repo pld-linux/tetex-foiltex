@@ -6,6 +6,7 @@ Release:	1
 Copyright:	nocommercial	
 Group:		Applications/Publishing/TeX
 Group(pl):	Aplikacje/Publikowanie/TeX
+URL:		ftp://ftp.dante.de/tex-archive/macros/latex/contrib/supported/%{_short_name}.tar.gz
 Source0:	%{_short_name}.tar.gz
 Requires:	tetex
 Requires:	tetex-latex
