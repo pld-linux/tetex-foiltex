@@ -7,6 +7,7 @@ Release:	4
 License:	non-commercial
 Group:		Applications/Publishing/TeX
 Source0:	ftp://ftp.dante.de/tex-archive/nonfree/macros/latex/contrib/supported/%{_short_name}.tar.gz
+# Source0-md5:	82b85d8439e6788fabe10fb59ff1c742
 %requires_eq	tetex
 %requires_eq	tetex-latex
 BuildRequires:	tetex-latex
