@@ -6,8 +6,6 @@ Version:	1
 Release:	4
 License:	nocommercial	
 Group:		Applications/Publishing/TeX
-Group(de):	Applikationen/Publizieren/TeX
-Group(pl):	Aplikacje/Publikowanie/TeX
 Source0:	ftp://ftp.dante.de/tex-archive/nonfree/macros/latex/contrib/supported/%{_short_name}.tar.gz
 %requires_eq	tetex
 %requires_eq	tetex-latex
