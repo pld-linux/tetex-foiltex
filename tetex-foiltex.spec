@@ -10,7 +10,7 @@ Source0:	ftp://ftp.dante.de/tex-archive/nonfree/macros/latex/contrib/supported/%
 %requires_eq	tetex
 %requires_eq	tetex-latex
 BuildRequires:	tetex-latex
-Prereq:		tetex
+PreReq:		tetex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -44,4 +44,4 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc readme.flt sampfoil.tex
-%{_datadir}/texmf/tex/latex/%{_short_name}/*
+%{_datadir}/texmf/tex/latex/%{_short_name}
