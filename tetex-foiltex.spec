@@ -4,7 +4,7 @@ Summary(pl):	Zbiór makr tekstowych do przygotowywania slajdów
 Name:		tetex-foiltex
 Version:	1
 Release:	4
-License:	Non-commercial
+License:	non-commercial
 Group:		Applications/Publishing/TeX
 Source0:	ftp://ftp.dante.de/tex-archive/nonfree/macros/latex/contrib/supported/%{_short_name}.tar.gz
 %requires_eq	tetex
