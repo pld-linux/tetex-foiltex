@@ -4,7 +4,7 @@ Summary(pl):	Zbiór makr tekstowych do przygotowywania slajdów
 Name:		tetex-foiltex
 Version:	1
 Release:	4
-License:	nocommercial	
+License:	nocommercial
 Group:		Applications/Publishing/TeX
 Source0:	ftp://ftp.dante.de/tex-archive/nonfree/macros/latex/contrib/supported/%{_short_name}.tar.gz
 %requires_eq	tetex
@@ -29,10 +29,10 @@ latex foiltex.ins
 
 %install
 rm -rf $RPM_BUILD_ROOT
-install -d $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{_short_name} 
+install -d $RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{_short_name}
 
 install {fltfonts.def,*.clo,*.sty,foiltex.log,foils.cls} \
-	$RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{_short_name} 
+	$RPM_BUILD_ROOT%{_datadir}/texmf/tex/latex/%{_short_name}
 
 gzip -9nf readme.flt sampfoil.tex
 
@@ -42,7 +42,7 @@ rm -rf $RPM_BUILD_ROOT
 %post	-p %{_bindir}/mktexlsr
 %postun	-p %{_bindir}/mktexlsr
 
-%files 
+%files
 %defattr(644,root,root,755)
 %doc *.gz
 %{_datadir}/texmf/tex/latex/%{_short_name}/*
