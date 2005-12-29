@@ -3,11 +3,12 @@ Summary:	Set of LaTeX macros for preparing slides
 Summary(pl):	Zbiór makr tekstowych do przygotowywania slajdów
 Name:		tetex-%{_short_name}
 Version:	1
-Release:	5
+Release:	6
 License:	non-commercial
 Group:		Applications/Publishing/TeX
-Source0:	ftp://tug.ctan.org/tex-archive/nonfree/macros/latex/contrib//%{_short_name}.tar.gz
-# Source0-md5:	3d6c4425e941f09db4ea3987daa02e09
+Source0:	ftp://tug.ctan.org/tex-archive/nonfree/macros/latex/contrib//%{_short_name}.zip
+# Source0-md5:	f3c8204a28cd176af889549ab1f6dc18
+Patch0:		%{name}-newcommand.patch
 %requires_eq	tetex
 %requires_eq	tetex-latex
 BuildRequires:	tetex-latex
@@ -24,6 +25,7 @@ przypadku przygotowywania prezentacji za pomoc± pdflatex.
 
 %prep
 %setup -q -n %{_short_name}
+%patch0 -p0
 
 %build
 latex foiltex.ins
@@ -44,5 +46,5 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc readme.flt sampfoil.tex
+%doc README sampfoil.tex foiltex.pdf
 %{_datadir}/texmf/tex/latex/%{_short_name}
