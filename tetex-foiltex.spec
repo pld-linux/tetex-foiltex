@@ -1,6 +1,6 @@
 %define _short_name 	foiltex
 Summary:	Set of LaTeX macros for preparing slides
-Summary(pl.UTF-8):   Zbiór makr tekstowych do przygotowywania slajdów
+Summary(pl.UTF-8):	Zbiór makr tekstowych do przygotowywania slajdów
 Name:		tetex-%{_short_name}
 Version:	1
 Release:	6
