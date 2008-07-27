@@ -3,7 +3,7 @@ Summary:	Set of LaTeX macros for preparing slides
 Summary(pl.UTF-8):	Zbiór makr tekstowych do przygotowywania slajdów
 Name:		tetex-%{_short_name}
 Version:	1
-Release:	6
+Release:	7
 License:	non-commercial
 Group:		Applications/Publishing/TeX
 Source0:	ftp://tug.ctan.org/tex-archive/nonfree/macros/latex/contrib//%{_short_name}.zip
