@@ -12,6 +12,7 @@ Patch0:		%{name}-newcommand.patch
 %requires_eq	tetex
 %requires_eq	tetex-latex
 BuildRequires:	tetex-latex
+BuildRequires:	unzip
 PreReq:		tetex
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
